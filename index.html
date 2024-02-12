@@ -43,20 +43,20 @@
             <!-- card 2 -->
             <div class="shadow-xl card w-96 bg-base-100">
                 <figure class="px-10 pt-10">
-                    <img src="./images/triangle.png" />
+                    <img src="./images/rectangle.png" />
                 </figure>
                 <div class="items-center text-center card-body gap-y-6">
-                    <h2 class="card-title">Triangle</h2>
-                    <p>Area (A) = 0.5 X b X h</p>
+                    <h2 class="card-title">Rectangle</h2>
+                    <p>Area (A) = w X l</p>
                     <div class="flex gap-4">
-                        <input id="triangle-base" class="w-full max-w-xs input input-bordered input-secondary"
-                            placeholder="base" type="text">
-                        <input id="triangle-height" class="w-full max-w-xs input input-bordered input-primary"
-                            placeholder="height" type="text">
+                        <input id="rectangle-width" class="w-full max-w-xs input input-bordered input-secondary"
+                            placeholder="width" type="text">
+                        <input id="rectangle-height" class="w-full max-w-xs input input-bordered input-primary"
+                            placeholder="length" type="text">
                     </div>
                     <div class="w-full card-actions">
                         <button class="w-full text-xl text-white btn btn-info"
-                            onclick="getTriangleInfo()">calculate</button>
+                            onclick="getRectangleInfo()">calculate</button>
                     </div>
                 </div>
             </div>
@@ -86,6 +86,7 @@
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/rectangle.js"></script>
 </body>
 
 </html>
