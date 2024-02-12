@@ -28,11 +28,11 @@
                     <h2 class="card-title">Triangle</h2>
                     <p>Area (A) = 0.5 X b X h</p>
                     <div class="flex gap-4">
-                        <input class="w-full max-w-xs input input-bordered input-secondary" placeholder="base" type="text">
-                        <input class="w-full max-w-xs input input-bordered input-primary" placeholder="height" type="text">
+                        <input id="triangle-base" class="w-full max-w-xs input input-bordered input-secondary" placeholder="base" type="text">
+                        <input id="triangle-height" class="w-full max-w-xs input input-bordered input-primary" placeholder="height" type="text">
                     </div>
                     <div class="w-full card-actions">
-                        <button class="w-full text-xl text-white btn btn-info">calculate</button>
+                        <button class="w-full text-xl text-white btn btn-info" onclick="getTriangleInfo()">calculate</button>
                     </div>
                 </div>
             </div>
