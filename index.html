@@ -10,15 +10,33 @@
 </head>
 
 <body class="lg:m-12">
-    <header class="flex justify-between bg-[#1090d819] items-center py-5 px-12">
+    <header class="flex items-center justify-between px-12 py-5 mb-12 bg-primary-content">
         <div>
             <h1 class="text-4xl font-bold">Interactive<br>
-                <span class="font-normal">Geometry Genius</span></h1>
+                <span class="font-normal">Geometry Genius</span>
+            </h1>
         </div>
-        <button class="w-24 h-12 font-bold btn text-white bg-[#1090D8]">Blog</button>
+        <button class="w-24 h-12 font-bold text-white btn btn-info">Blog</button>
     </header>
     <main>
-
+        <div>
+            <div class="shadow-xl card w-96 bg-base-100">
+                <figure class="px-10 pt-10">
+                    <img src="./images/triangle.png" />
+                </figure>
+                <div class="items-center text-center card-body gap-y-6">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex gap-4">
+                        <input class="w-full max-w-xs input input-bordered input-secondary" placeholder="base" type="text">
+                        <input class="w-full max-w-xs input input-bordered input-primary" placeholder="height" type="text">
+                    </div>
+                    <div class="w-full card-actions">
+                        <button class="w-full text-xl text-white btn btn-info">calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="js/script.js"></script>
 </body>
