@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -16,12 +16,12 @@
                 <span class="font-normal">Geometry Genius</span>
             </h1>
         </div>
-        <button class="w-24 h-12 font-bold text-white btn btn-info">Blog</button>
+        <button class="md:w-24 md:h-12 font-bold text-white btn btn-info">Blog</button>
     </header>
     <main>
-        <div class=" lg:flex justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class=" md:flex justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- card 1 -->
-            <div class="shadow-xl card w-96 bg-base-100">
+            <div class="shadow-xl card md:w-96 bg-base-100">
                 <figure class="px-10 pt-10">
                     <img src="./images/triangle.png" />
                 </figure>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <!-- card 2 -->
-            <div class="shadow-xl card w-96 bg-base-100">
+            <div class="shadow-xl card md:w-96 bg-base-100">
                 <figure class="px-10 pt-10">
                     <img src="./images/rectangle.png" />
                 </figure>
@@ -61,22 +61,22 @@
                 </div>
             </div>
             <!-- card 3 -->
-            <div class="shadow-xl card w-96 bg-base-100">
+            <div class="shadow-xl card md:w-96 bg-base-100">
                 <figure class="px-10 pt-10">
-                    <img src="./images/triangle.png" />
+                    <img src="./images/parallelogram.png" />
                 </figure>
                 <div class="items-center text-center card-body gap-y-6">
-                    <h2 class="card-title">Triangle</h2>
-                    <p>Area (A) = 0.5 X b X h</p>
+                    <h2 class="card-title">Parallelogram</h2>
+                    <p>Area (A) = b X h</p>
                     <div class="flex gap-4">
-                        <input id="triangle-base" class="w-full max-w-xs input input-bordered input-secondary"
+                        <input id="para-base" class="w-full max-w-xs input input-bordered input-secondary"
                             placeholder="base" type="text">
-                        <input id="triangle-height" class="w-full max-w-xs input input-bordered input-primary"
+                        <input id="para-height" class="w-full max-w-xs input input-bordered input-primary"
                             placeholder="height" type="text">
                     </div>
                     <div class="w-full card-actions">
                         <button class="w-full text-xl text-white btn btn-info"
-                            onclick="getTriangleInfo()">calculate</button>
+                            onclick="getParaInfo()">calculate</button>
                     </div>
                 </div>
             </div>
@@ -87,6 +87,7 @@
     </main>
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
+    <script src="js/paralellogram.js"></script>
 </body>
 
 </html>
