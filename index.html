@@ -19,75 +19,101 @@
         <button class="md:w-24 md:h-12 font-bold text-white btn btn-info">Blog</button>
     </header>
     <main>
-        <div class=" md:flex justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="lg:flex justify-between">
             <!-- card 1 -->
-            <div class="shadow-xl card md:w-96 bg-base-100">
-                <figure class="px-10 pt-10">
-                    <img src="./images/triangle.png" />
-                </figure>
-                <div class="items-center text-center card-body gap-y-6">
-                    <h2 class="card-title">Triangle</h2>
-                    <p>Area (A) = 0.5 X b X h</p>
-                    <div class="flex gap-4">
-                        <input id="triangle-base" class="w-full max-w-xs input input-bordered input-secondary"
-                            placeholder="base" type="text">
-                        <input id="triangle-height" class="w-full max-w-xs input input-bordered input-primary"
-                            placeholder="height" type="text">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                <div class="shadow-xl card md:w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/triangle.png" />
+                    </figure>
+                    <div class="items-center text-center card-body gap-y-6">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <div class="flex gap-4">
+                            <input id="triangle-base" class="w-full max-w-xs input input-bordered input-secondary"
+                                placeholder="base" type="text">
+                            <input id="triangle-height" class="w-full max-w-xs input input-bordered input-primary"
+                                placeholder="height" type="text">
+                        </div>
+                        <div class="w-full card-actions">
+                            <button class="w-full text-xl text-white btn btn-info"
+                                onclick="getTriangleInfo()">calculate</button>
+                        </div>
                     </div>
-                    <div class="w-full card-actions">
-                        <button class="w-full text-xl text-white btn btn-info"
-                            onclick="getTriangleInfo()">calculate</button>
+                </div>
+                <!-- card 2 -->
+                <div class="shadow-xl card md:w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/rectangle.png" />
+                    </figure>
+                    <div class="items-center text-center card-body gap-y-6">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w X l</p>
+                        <div class="flex gap-4">
+                            <input id="rectangle-width" class="w-full max-w-xs input input-bordered input-secondary"
+                                placeholder="width" type="text">
+                            <input id="rectangle-height" class="w-full max-w-xs input input-bordered input-primary"
+                                placeholder="length" type="text">
+                        </div>
+                        <div class="w-full card-actions">
+                            <button class="w-full text-xl text-white btn btn-info"
+                                onclick="getRectangleInfo()">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="shadow-xl card md:w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/parallelogram.png" />
+                    </figure>
+                    <div class="items-center text-center card-body gap-y-6">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b X h</p>
+                        <div class="flex gap-4">
+                            <input id="para-base" class="w-full max-w-xs input input-bordered input-secondary"
+                                placeholder="base" type="text">
+                            <input id="para-height" class="w-full max-w-xs input input-bordered input-primary"
+                                placeholder="height" type="text">
+                        </div>
+                        <div class="w-full card-actions">
+                            <button class="w-full text-xl text-white btn btn-info"
+                                onclick="getParaInfo()">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="shadow-xl card md:w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/rhombus.png" />
+                    </figure>
+                    <div class="items-center text-center card-body gap-y-6">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                        <p>d<sub>1</sub> = 16cm &emsp; d<sub>2</sub> = 8cm</p>
+                        <div class="flex gap-4">
+                            <input id="diagonal-1" class="w-full max-w-xs input input-bordered input-secondary"
+                                placeholder="Diagonal 1" type="text">
+                            <input id="diagonal-2" class="w-full max-w-xs input input-bordered input-primary"
+                                placeholder="Diagonal 2" type="text">
+                        </div>
+                        <div class="w-full card-actions">
+                            <button class="w-full text-xl text-white btn btn-info"
+                                onclick="getRhombusInfo()">calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- card 2 -->
-            <div class="shadow-xl card md:w-96 bg-base-100">
-                <figure class="px-10 pt-10">
-                    <img src="./images/rectangle.png" />
-                </figure>
-                <div class="items-center text-center card-body gap-y-6">
-                    <h2 class="card-title">Rectangle</h2>
-                    <p>Area (A) = w X l</p>
-                    <div class="flex gap-4">
-                        <input id="rectangle-width" class="w-full max-w-xs input input-bordered input-secondary"
-                            placeholder="width" type="text">
-                        <input id="rectangle-height" class="w-full max-w-xs input input-bordered input-primary"
-                            placeholder="length" type="text">
-                    </div>
-                    <div class="w-full card-actions">
-                        <button class="w-full text-xl text-white btn btn-info"
-                            onclick="getRectangleInfo()">calculate</button>
-                    </div>
-                </div>
-            </div>
-            <!-- card 3 -->
-            <div class="shadow-xl card md:w-96 bg-base-100">
-                <figure class="px-10 pt-10">
-                    <img src="./images/parallelogram.png" />
-                </figure>
-                <div class="items-center text-center card-body gap-y-6">
-                    <h2 class="card-title">Parallelogram</h2>
-                    <p>Area (A) = b X h</p>
-                    <div class="flex gap-4">
-                        <input id="para-base" class="w-full max-w-xs input input-bordered input-secondary"
-                            placeholder="base" type="text">
-                        <input id="para-height" class="w-full max-w-xs input input-bordered input-primary"
-                            placeholder="height" type="text">
-                    </div>
-                    <div class="w-full card-actions">
-                        <button class="w-full text-xl text-white btn btn-info"
-                            onclick="getParaInfo()">calculate</button>
-                    </div>
-                </div>
-            </div>
-            <div id="calculate-area" class="bg-success w-full lg:w-[437px] lg:h-[454] pt-4 text-white text-xl font-semibold">
-                <h1 class="text-3xl font-bold text-white text-center border-b-2 border-white w-[300px] mx-auto">Area Calculation</h1>
+            <div id="calculate-area"
+                class="bg-success w-full lg:w-[437px] h-[450px] drop-shadow-lg pt-4 text-white text-xl font-semibold">
+                <h2 class="text-3xl text-wrap font-bold text-white text-center border-b-2 border-white max-w-[300px] mx-auto">Area
+                    Calculation</h2>
             </div>
         </div>
     </main>
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
     <script src="js/paralellogram.js"></script>
+    <script src="js/rhombus.js"></script>
 </body>
 
 </html>
