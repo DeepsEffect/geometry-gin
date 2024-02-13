@@ -21,7 +21,7 @@
     <main>
         <div class="lg:flex justify-between">
             <!-- card 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-20">
                 <div class="shadow-xl card md:w-96 bg-base-100">
                     <figure class="px-10 pt-10">
                         <img src="./images/triangle.png" />
@@ -102,6 +102,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- card 5 -->
+                <div class="shadow-xl card md:w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/pentagon.png" />
+                    </figure>
+                    <div class="items-center text-center card-body gap-y-6">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 X p X b</p>
+                        <p>p = 6cm &emsp; b = 10cm</p>
+                        <div class="flex gap-4">
+                            <input id="perimeter" class="w-full max-w-xs input input-bordered input-secondary"
+                                placeholder="Perimeter" type="text">
+                            <input id="apothem" class="w-full max-w-xs input input-bordered input-primary"
+                                placeholder="Apothem" type="text">
+                        </div>
+                        <div class="w-full card-actions">
+                            <button class="w-full text-xl text-white btn btn-info"
+                                onclick="getPentagonInfo()">calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="calculate-area"
                 class="bg-success w-full lg:w-[437px] h-[450px] drop-shadow-lg pt-4 text-white text-xl font-semibold">
@@ -114,6 +135,7 @@
     <script src="js/rectangle.js"></script>
     <script src="js/paralellogram.js"></script>
     <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
 </body>
 
 </html>
