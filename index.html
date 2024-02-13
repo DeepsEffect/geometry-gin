@@ -16,7 +16,7 @@
                 <span class="font-normal">Geometry Genius</span>
             </h1>
         </div>
-        <button class="md:w-24 md:h-12 font-bold text-white btn btn-info">Blog</button>
+        <a href="https://www.emathhelp.net/en/geometry-calculator/" target="_blank"><button class="md:w-24 md:h-12 font-bold text-white btn btn-info">Blog</button></a>
     </header>
     <main>
         <div class="lg:flex justify-between">
@@ -123,10 +123,33 @@
                         </div>
                     </div>
                 </div>
+                <!-- card 6 -->
+                <div class="shadow-xl card md:w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/ellipse.png" />
+                    </figure>
+                    <div class="items-center text-center card-body gap-y-6">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = &pi;ab</p>
+                        <p>a = 10cm &emsp; b = 4cm</p>
+                        <div class="flex gap-4">
+                            <input id="a-axis" class="w-full max-w-xs input input-bordered input-secondary"
+                                placeholder="a Axis" type="text">
+                            <input id="b-axis" class="w-full max-w-xs input input-bordered input-primary"
+                                placeholder="b Axis" type="text">
+                        </div>
+                        <div class="w-full card-actions">
+                            <button class="w-full text-xl text-white btn btn-info"
+                                onclick="getEllipseInfo()">calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="calculate-area"
                 class="bg-success w-full lg:w-[437px] h-[450px] drop-shadow-lg pt-4 text-white text-xl font-semibold">
-                <h2 class="text-3xl text-wrap font-bold text-white text-center border-b-2 border-white max-w-[300px] mx-auto">Area
+                <h2
+                    class="text-3xl text-wrap font-bold text-white text-center border-b-2 border-white max-w-[300px] mx-auto">
+                    Area
                     Calculation</h2>
             </div>
         </div>
@@ -136,6 +159,7 @@
     <script src="js/paralellogram.js"></script>
     <script src="js/rhombus.js"></script>
     <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
 </body>
 
 </html>
